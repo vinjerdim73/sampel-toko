@@ -1,6 +1,9 @@
 <?php
     session_start();
+
     if (!$_SESSION["username"]) {
+        // jika di sesi ini tidak ada username yang aktif
+        // proses ke logout
         header("location:logout.php");
     }
 ?>

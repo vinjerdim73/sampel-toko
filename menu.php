@@ -1,6 +1,7 @@
 <nav>
     <ul>
         <li><a href="home.php">HOME</a></li>
+        <!-- jika level yang sedang login adalah admin, tampilkan MASTER -->
         <?php if ($_SESSION["level"] == "admin") : ?>
             <li>MASTER
                 <ul>
