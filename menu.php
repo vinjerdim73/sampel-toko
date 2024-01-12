@@ -1,5 +1,6 @@
 <nav>
     <ul>
+        <li><a href="home.php">HOME</a></li>
         <?php if ($_SESSION["level"] == "admin") : ?>
             <li>MASTER
                 <ul>
@@ -14,6 +15,10 @@
                 <li><a href="pembelian.php">Pembelian</a></li>
             </ul>
         </li>
-        <li><a href="logout.php">Log out</a></li>
+        <li>Selamat datang, <?= $_SESSION["username"] ?>!
+            <ul>
+                <li><a href="logout.php">Log out</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
