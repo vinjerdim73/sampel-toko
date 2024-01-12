@@ -9,13 +9,13 @@ $query = mysqli_query($koneksi, "SELECT * FROM user WHERE username = '$username'
 $jumlah_data = mysqli_num_rows($query);
 
 if ($jumlah_data == 1) {
-    $data = mysqli_fetch_array($query);
+    $user = mysqli_fetch_array($query);
 
-    $password_benar = password_verify($password, $data["password"]);
+    $password_benar = password_verify($password, $user["password"]);
     if ($password_benar) {
         session_start();
-        $_SESSION["username"] = $data["username"];
-        $_SESSION["level"] = $data["level"];
+        $_SESSION["username"] = $user["username"];
+        $_SESSION["level"] = $user["level"];
         header("location: home.php");
     } else {
         echo "Username atau password tidak valid";

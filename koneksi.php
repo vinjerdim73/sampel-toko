@@ -1,3 +1,3 @@
 <?php
 
-$koneksi = mysqli_connect("localhost", "root", "", "toko");
+$koneksi = mysqli_connect("localhost", "root", "", "sampel-toko");
