@@ -2,8 +2,7 @@
     session_start();
 
     if (!array_key_exists("username", $_SESSION)) {
-        // jika di sesi ini tidak ada username yang aktif
-        // proses ke logout
+        // jika di sesi ini tidak ada username yang aktif, proses ke logout
         header("location:logout.php");
     }
 ?>
@@ -14,8 +13,6 @@
     <title>Home</title>
 </head>
 <body>
-    <?php
-        include "menu.php";
-    ?>
+    <?php include "menu.php"; ?>
 </body>
 </html>

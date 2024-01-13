@@ -7,7 +7,8 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 
 // Dicari dari tabel user yang username-nya sama
-$query = mysqli_query($koneksi, "SELECT * FROM user WHERE username = '$username'");
+$sql = "SELECT * FROM user WHERE username = '$username'";
+$query = mysqli_query($koneksi, $sql);
 $jumlah_user = mysqli_num_rows($query);
 
 if ($jumlah_user == 1) {
@@ -20,7 +21,7 @@ if ($jumlah_user == 1) {
         // Jika password benar, sesi login dimulai
         session_start();
 
-        // di sesi login perlu diisi siapa username yang login dan levelnya apa
+        // lalu setting siapa username yang login dan levelnya apa
         $_SESSION["username"] = $user["username"];
         $_SESSION["level"] = $user["level"];
 
