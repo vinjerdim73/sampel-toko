@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (!array_key_exists("username", $_SESSION)) {
+        // jika di sesi ini tidak ada username yang aktif, proses ke logout
+        header("location:logout.php");
+    }
+?>
+
 <nav>
     <ul>
         <li><a href="home.php">HOME</a></li>
