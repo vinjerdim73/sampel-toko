@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button type="submit">EDIT</button>
+                        <button type="submit">SIMPAN</button>
                         <button type="reset">RESET</button>
                     </td>
                 </tr>

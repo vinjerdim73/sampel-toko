@@ -2,6 +2,13 @@
 
 require "koneksi.php";
 
+session_start();
+
+if ($_POST["id"] == $_SESSION["id"]) {
+    echo "Tidak bisa hapus user yang sedang aktif";
+    exit;
+}
+
 // id diambil dari tombol Hapus yang ditekan di user.php
 $id = $_POST["id"];
 

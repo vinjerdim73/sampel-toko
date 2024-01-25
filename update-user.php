@@ -2,6 +2,13 @@
 
 require "koneksi.php";
 
+session_start();
+
+if ($_POST["id"] == $_SESSION["id"]) {
+    echo "Tidak bisa edit user yang sedang aktif";
+    exit;
+}
+
 // id, username, password, dan level diambil dari read-user.php
 $id = $_POST["id"];
 $username = $_POST["username"];

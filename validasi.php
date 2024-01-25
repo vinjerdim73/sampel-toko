@@ -22,6 +22,7 @@ if ($jumlah_user == 1) {
         session_start();
 
         // lalu setting siapa username yang login dan levelnya apa
+        $_SESSION["id"] = $user["id"];
         $_SESSION["username"] = $user["username"];
         $_SESSION["level"] = $user["level"];
 

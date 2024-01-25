@@ -41,7 +41,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button type="submit">TAMBAH</button>
+                        <button type="submit">SIMPAN</button>
                         <button type="reset">RESET</button>
                     </td>
                 </tr>
