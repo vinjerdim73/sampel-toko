@@ -29,7 +29,7 @@
                         <select name="id_barang">
                             <?php while ($barang = mysqli_fetch_array($query)) : ?>
                                 <option value='<?= $barang["id"] ?>'>
-                                    <?= $barang["nama"] ?>, harga: <?= $barang["harga_jual"] ?>, stok: <?= $barang["stok"] ?>
+                                    <?= $barang["nama"] ?>, harga: <?= $barang["harga_beli"] ?>, stok: <?= $barang["stok"] ?>
                                 </option>
                             <?php endwhile ?>
                         </select>
