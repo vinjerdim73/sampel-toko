@@ -9,14 +9,8 @@
     <?php include "menu.php"; ?>
 
     <?php
-    if ($_SESSION["level"] != "admin" && $_SESSION["level"] != "keuangan") {
-        // jika di sesi ini levelnya bukan admin atau bukan keuangan, akses ditolak
-        echo "Anda tidak dapat mengakses halaman ini";
-        exit;
-    }
-    ?>
+    // halaman ini boleh diakses oleh semua level
 
-    <?php
     require "koneksi.php";
 
     // ambil semua data barang untuk ditampilkan sebagai pilihan
