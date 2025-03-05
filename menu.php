@@ -22,7 +22,6 @@
         <li>TRANSAKSI
             <ul>
                 <li><a href="penjualan.php">Penjualan</a></li>
-                <li><a href="pembelian.php">Pembelian</a></li>
             </ul>
         </li>
         <li>Selamat datang, <?= $_SESSION["username"] ?>!
